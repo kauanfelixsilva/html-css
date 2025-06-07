@@ -1,11 +1,19 @@
 @charset "UTF-8";
+
+:root{
+    --cor1: #765d67;
+    --cor2: #6d3c52;
+    --cor3: #4b2138;
+    --cor4: #2d222f;
+    --cor5: #fadcd5;
+    
+}
+
 body{
     color: black;
-    background-color: white;  
+    background-color: var(--cor5);  
 }
 h1{
-    color: #6e6d6d;
+    color: black;
 }
-h2{
-    color: #6e6d6d;
-}
+
