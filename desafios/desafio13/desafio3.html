@@ -22,16 +22,20 @@
 <body>
     <table>
         <thead>
-        <th>Grupo</th>
-        <th>Nome</th>
-        <th colspan="3">Filme</th>
+        <tr>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nome</th>
+            <th colspan="3" scope="colgroup">Filme</th>
+        </tr>
         </thead>
         <tbody>
-            <th rowspan="3">Mulheres</th>
-            <td>Ana Laura</td>
-            <td>Alien</td>
-            <td>Rambo</td>
-            <td>Vingadores</td>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Laura</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
             <tr>
                 <td>Beatriz Souza</td>
                 <td>Hulk</td>
@@ -46,7 +50,7 @@
             </tr>
         
         <tr>
-            <th rowspan="3">Homens</th>
+            <th rowspan="3" scope="rowgroup">Homens</th>
             <td>Luiz</td>
             <td>Intocaveis</td>
             <td>Ammésia</td>
@@ -65,6 +69,12 @@
             <td>Toy story</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="4" scope="row">Total</th>
+            <td>1000</td>
+        </tr>
+    </tfoot>
     </table>
 </body>
 </html>
